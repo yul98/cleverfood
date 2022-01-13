@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap');
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6 rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+/* Responsive */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media only screen and (min-width: 1023px) {
+    /* Header */
+    .nav__search__form input[type='text'] {
+        width: 500px;
+    }
+}
+/* Media query for tablet & mobile */
+@media only screen and (max-width: 1023px) {
+    /* header */
+    .hamburger-btn {
+        display: block;
+        margin-left: 30px;
+    }
+    .navbar__list {
+        display: none;
+    }
+    .nav__search-btn {
+        padding-right: 40px;
+    }
+}
+/* Media quert for desktop */
+@media only screen and (max-width: 1023px) {
+    .sale__content-4 {
+        display: none;
+    }
+    .footer__instagram {
+        display: none;
+    }
+}
+/* Media query for tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Header */
+    .nav__search__form input[type='text'] {
+        width: 300px;
+    }
+}
+/*  Media query for mobile */
+@media only screen and (max-width: 576px) {
+
+    /* Product section */
+    .product__img-1 {
+        display: none;
+    }
+    /* End Product section */
+    
+    /* Feature section */
+
+    .feature__top h1 {
+        padding: 0 20px;
+    }
+    .feature__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* End Feature section */
+
+    /* Sale section */
+    .sale__content-3 {
+        display: none;
+    }
+    .sale__bottom__img-1,
+    .sale__bottom__img-3,
+    .sale__bottom__img-4,
+    .sale__bottom__img-5 {
+        display: none;
+    }
+    
+    /* End Sale section */
+
+    /* Footer section */
+    .footer__menu {
+        padding-left: 15px;
+    }
+    /* End Footer section */
+}
