@@ -96,4 +96,13 @@ a {
         padding-left: 15px;
     }
     /* End Footer section */
+    /* Contact setion */
+    .contact__infor__brand {
+        padding: 30px;
+        justify-content: center;
+    }
+    .contact__infor__brand-logo img {
+        padding-bottom: 20px;
+        padding-left: 50px;
+    }
 }

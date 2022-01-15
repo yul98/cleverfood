@@ -301,22 +301,20 @@
 .intro__infor {
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     max-width: 100%;
-    padding-bottom: 50px;
+    padding: 0 15px 30px;
 }
 .intro__infor span {
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 600;
-    max-width: 41.67%;
 }
 .intro__infor p {
     font-size: 1.8rem;
     padding-top: 30px;
-    max-width: 41%;
 }
 /* End Infor section */
 
@@ -325,7 +323,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 50px;
     align-items: center;
 }
 .intro__content-layout {
@@ -342,11 +339,12 @@
     flex: 25%;
     flex-basis: 25%;
     line-height: 1.6;
-    padding: 0 50px 0 15px;
+    padding: 0 15px 30px;
     text-align: center;
 }
 .intro__content-left img {
     max-width: 100%;
+    object-fit: cover;
 }
 .intro__content-left h3 {
     font-size: 2.4rem;
@@ -365,7 +363,7 @@
 .intro__content-right {
     flex: 25%;
     flex-basis: 25%;
-    padding: 0 15px 0 50px;
+    padding: 0 15px 30px;
     text-align: center;
 }
 .intro__content-right img {
@@ -379,6 +377,100 @@
     font-size: 1.6rem;
 }
 /* End Intro content section */
+
+/* Blog section */
+.blog h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.blog__content input[type='text'] {
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid rgb(134, 186, 9);
+}
+.blog__content #btnSubmit {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin-left: -5px;
+    outline: none;
+    background-color: rgb(134, 186, 9);
+    border: 2px solid rgb(134, 186, 9);
+    border-radius: 0 5px 5px 0;
+}
+.blog__content #btnSubmit:hover {
+    background-color: rgb(115, 155, 15);
+}
+.blog__search-icon {
+    color: #fff;
+}
+/* End Blog section */
+
+/* Contact section */
+.contact {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+.contact__content {
+    display: flex;
+}
+.contact__layout {
+    display: block;
+    padding: 60px 0 0;
+    height: auto;
+}
+.contact__map {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.contact__infor h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 0 0 28px;
+    margin: 0 0 14px;
+
+}
+.contact__infor__brand {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.contact__infor__brand-logo img {
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+.contact__infor__brand-title {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+.contact__infor__brand-title a {
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+}
+.contact__infor__brand-title a:hover {
+    color: rgb(134, 186, 9);
+}
+.form-control {
+    font-size: 1.5rem;
+}
+#contact-bottom {
+    font-size: 1.6rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    background-color: rgb(134, 186, 9);
+    border: rgb(134, 186, 9);
+}
+#contact-bottom:hover {
+    background-color:rgb(94, 128, 15);
+}
+/* End Contact section */
 
 /* Product section */
 .product {
