@@ -27,6 +27,13 @@ a {
     .nav__search__form input[type='text'] {
         width: 500px;
     }
+    /* Store */
+    .store__content__bar {
+        margin-left: -40px;
+    }
+    .store__content__list {
+        margin-right: -50px;
+    }
 }
 /* Media query for tablet & mobile */
 @media only screen and (max-width: 1023px) {
@@ -41,6 +48,21 @@ a {
     .nav__search-btn {
         padding-right: 40px;
     }
+    /* Store */
+    .store__nav__right p {
+        display: none;
+    }
+    .store__nav {
+        display: block;
+        margin: 0 auto;
+    }
+    .store__nav__left {
+        display: block;
+        text-align: center;
+    }
+    .store__nav__right select {
+       display: block;
+    }
 }
 /* Media quert for desktop */
 @media only screen and (max-width: 1023px) {
@@ -50,6 +72,15 @@ a {
     .footer__instagram {
         display: none;
     }
+    .card-img-top {
+        height: 100%;
+        width: 100%; 
+    }
+    /* Store */
+    .store__content__bar {
+        display: none;
+    }
+    
 }
 /* Media query for tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
