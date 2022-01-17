@@ -605,6 +605,58 @@
 .page-item {
     font-size: 1.4rem;
 }
+/* Mobile store */
+.store__bars-btn {
+    width: 20px;
+    height: 20px;
+    color:rgba(0, 0, 0, 0.4);
+    display: none;
+    margin: 0 auto;
+}
+.store__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.store__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    width: 90%;
+    max-width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+.store__mobile-close {
+    width: 15px;
+    height: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    z-index: 10;
+    margin-top: 100px;
+
+}
+.store__mobile-close:hover {
+    color:rgb(236, 235, 235);
+}
+.store__input:checked ~ .store__mobile {
+    transform: translateX(0%);
+}
+.store__input:checked ~ .store__overlay {
+    display: block;
+}
 /* End Store section */
 
 /* Contact section */
