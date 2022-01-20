@@ -439,6 +439,7 @@
     height: 40px;
     margin-right: 15px;
     background-size: cover;
+    object-fit: cover;
 }
 .blog__content__bar-title-link a {
     font-size: 1.4rem;
